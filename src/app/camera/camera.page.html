@@ -1,0 +1,17 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>CAMARA</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref='/login'></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <div class="flex-center">
+  <img *ngIf="image" [src]="image" alt="image">
+  <br>
+  <ion-button (click)="foto()"><ion-icon name="camera-outline"></ion-icon></ion-button>
+  </div>
+</ion-content>

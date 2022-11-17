@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-padding">
+      RegistraApp Duoc UC 
+    </ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <div class="flex-center ">
+
+    <ion-card>
+    <ion-title >
+        Bienvenido a RegistraApp!!
+    </ion-title>
+    
+    <div class="izquierda">
+      <ion-button color="tertiary"  routerLink="/camera" routerDirection="forward"><ion-icon name="camera-outline"></ion-icon></ion-button>
+    </div>
+      <br>
+      <div class="ion-padding">
+        <ion-button expand="full" color="success"  (click)="geo()" >Mis cordenadas!</ion-button>
+      </div>
+
+      <div class="ion-padding" color="white">
+        <ion-button  color="secondary" expand="full" routerLink="/note" routerDirection="forward"> NOTAS </ion-button>
+      </div>
+
+      <div class="ion-padding">
+        <ion-button expand="full" routerLink="/inicio/publicas" routerDirection="forward"> Listado de Universidades de Chile </ion-button>
+      </div>
+
+      <div class="ion-padding">
+        <ion-button expand="full" routerLink="/inicio/us" routerDirection="forward"> Listado de Universidades de Estados Unidos </ion-button>
+      </div>
+
+      <div class="ion-padding">
+        <ion-button expand="full" routerLink="/inicio/ca" routerDirection="forward"> Listado de Universidades de Canada </ion-button>
+      </div>
+
+      <div class="ion-padding">
+        <ion-button expand="full" routerLink="/inicio/leerqr" routerDirection="forward"> Revisa el precio de las cryptos </ion-button>
+      </div>
+      <div class="ion-padding">
+      <ion-button expand="full" color="danger"  routerLink="/login" routerDirection="forward" >Cerrar Sesion.</ion-button>
+      </div>
+      
+    </ion-card>
+  </div>  
+  
+</ion-content>
